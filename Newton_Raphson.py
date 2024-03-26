@@ -1,0 +1,11 @@
+x = 2 #initial value
+xn = 0
+xnn = 123
+while xn != xnn:
+    f = 2*(x**3)-3*(x**2)+(2*x)-3   #f(x) change for any fuction
+    fp = 6*(x**2)-(6*x)+2           #f'(x) change for the derivative
+    xn = x-(f/fp)       #Newton-Raphson method
+    xnn = round(xn, 6)  #number of decimals
+    print("X","=",xnn)
+    x = xnn
+print("Root=",x)
